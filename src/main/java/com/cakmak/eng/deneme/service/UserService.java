@@ -1,12 +1,16 @@
 package com.cakmak.eng.deneme.service;
 
 import com.cakmak.eng.deneme.entity.Account;
+import com.cakmak.eng.deneme.entity.Profile;
 import com.cakmak.eng.deneme.model.ProfileResponse;
+import com.cakmak.eng.deneme.model.dto.SignUpRequestDto;
+import com.cakmak.eng.deneme.model.dto.SignUpResponseDto;
+import com.cakmak.eng.deneme.model.mapper.SignUpMapper;
 import com.cakmak.eng.deneme.repository.AccountRepository;
+import com.cakmak.eng.deneme.repository.ProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 @Service
@@ -14,6 +18,12 @@ public class UserService {
 
     @Autowired
     private AccountRepository accountRepository;
+
+    @Autowired
+    private ProfileRepository profileRepository;
+
+    @Autowired
+    private SignUpMapper signUpMapper;
 
 
     public String getDetailProfileInformation(String username){
@@ -71,5 +81,19 @@ public class UserService {
         }
 
         return null;
+    }
+
+
+    public SignUpResponseDto registration(SignUpRequestDto requestDto){
+
+        SignUpResponseDto responseDto = new SignUpResponseDto();
+
+        Profile profile = signUpMapper.toProfile(requestDto);
+
+        profileRepository.save(profile);
+
+        responseDto.setMessage("Profile başarılı bir şekilde database kaydedilmiştir.");
+
+        return responseDto;
     }
 }
