@@ -90,6 +90,8 @@ public class UserService {
 
         Profile profile = signUpMapper.toProfile(requestDto);
 
+        profile.setId(Long.valueOf(requestDto.getMy()));
+
         profileRepository.save(profile);
 
         responseDto.setMessage("Profile başarılı bir şekilde database kaydedilmiştir.");
