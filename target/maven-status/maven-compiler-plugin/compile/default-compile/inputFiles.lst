@@ -1,0 +1,14 @@
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\response\SignUpResponse.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\mapper\SignUpMapper.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\service\UserService.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\DenemetestApplication.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\dto\SignUpResponseDto.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\ProfileRequest.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\controller\UserController.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\request\SignUpRequest.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\ProfileResponse.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\repository\AccountRepository.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\repository\ProfileRepository.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\entity\Profile.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\entity\Account.java
+C:\GitRepo\alican\SpringBootTest\src\main\java\com\cakmak\eng\deneme\model\dto\SignUpRequestDto.java

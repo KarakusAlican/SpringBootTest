@@ -2,7 +2,8 @@ package com.cakmak.eng.deneme.model.request;
 
 import jakarta.validation.constraints.NotNull;
 
-public class SignUpRequest {
+public class
+SignUpRequest {
 
 
     @NotNull(message = "id Boş Olamaz")
